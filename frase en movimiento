@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+
+namespace Entrenamiento
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            String nom;
+            byte k;
+            Console.WriteLine("Escriba aqui:");
+            nom = Console.ReadLine();
+
+            for (k = 1; k <= 70; k++)
+            {
+                Console.SetCursorPosition(k, 12);
+                Console.WriteLine(" " + nom);
+                System.Threading.Thread.Sleep(100);
+            }
+            Console.ReadLine();
+            Console.WriteLine("Fin");
+
+            Console.ReadKey();
+
+            }
+    }
+}
